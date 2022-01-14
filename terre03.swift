@@ -9,9 +9,9 @@ if numberOfArguments != 1 {
 }
 
 for i in alphabetLetters {
-    if argument[1] == {
+    if argument[1] == i {
         //alphabetLetters.removeFirst()
-        find(alphabetLetters, i)
+        print (alphabetLetters.indexOf(i))
         }
     }
 }
