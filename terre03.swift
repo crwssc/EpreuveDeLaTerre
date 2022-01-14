@@ -4,15 +4,18 @@ var argument = CommandLine.arguments
 let numberOfArguments = argument.count - 1
 let numberOfArrayElements = alphabetLetters.count - 1
 
+if numberOfArguments != 1 {
+    print ("Vous devez fournir un seul argument")
+}
 
-i = alphabetLetters[0]
-
-if numberOfArguments != 1 || argument[1] != i {
-    print ("Vous devez fournir une lettre minuscule des 26 lettres de base de l'alphabet, rien de plus, rien de moins")
-} else {
-    print ("Yes")
+for i in alphabetLetters {
+    if argument[1] == i {
+        var new = i
+        for new in alphabetLetters {
+            print (new)
+        }
+    }
 }
 
 
-
-// Ce que l'on veut, on veut que ma boucle parcours le tableau jusqu'à ce qu'il trouve argument[1] = i. Une fois cela trouvé, il faut qu'il affiche tous les éléments qu'ils parcourent
+// Ça marche presque, ce que ça me fait, c'est que ça m'affiche bien i mais après ça reprend tout le tableau de 0
