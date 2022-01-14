@@ -9,10 +9,9 @@ if numberOfArguments != 1 {
 }
 
 for i in alphabetLetters {
-    if argument[1] == i {
-        var new = i
-        for new in alphabetLetters {
-            print (new)
+    if argument[1] == {
+        //alphabetLetters.removeFirst()
+        find(alphabetLetters, i)
         }
     }
 }
