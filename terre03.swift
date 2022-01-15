@@ -15,13 +15,9 @@ for i in alphabetLetters {
         //alphabetLetters.removeFirst()
         var myIndex = alphabetLetters.firstIndex(of: i)!
         while myIndex < 26 {
-            print (alphabetLetters[myIndex]) ;
+            print (alphabetLetters[myIndex], terminator:"") ;
             myIndex += 1
         }
     }
 }
-
-
-
-//Ça m'affiche bien le numéro de mon index
-// Ça marche presque, ce que ça me fait, c'est que ça m'affiche bien i mais après ça reprend tout le tableau de 0
+print()
