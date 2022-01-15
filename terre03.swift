@@ -8,13 +8,17 @@ if numberOfArguments != 1 {
     print ("Vous devez fournir un seul argument")
 }
 
+
+
 for i in alphabetLetters {
     if argument[1] == i {
         //alphabetLetters.removeFirst()
-        print (alphabetLetters.indexOf(i))
-        }
+        let myIndex = alphabetLetters.firstIndex(of: i)!
+        print (myIndex)
     }
 }
 
 
+
+//Ça m'affiche bien le numéro de mon index 
 // Ça marche presque, ce que ça me fait, c'est que ça m'affiche bien i mais après ça reprend tout le tableau de 0
