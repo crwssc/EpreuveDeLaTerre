@@ -13,12 +13,15 @@ if numberOfArguments != 1 {
 for i in alphabetLetters {
     if argument[1] == i {
         //alphabetLetters.removeFirst()
-        let myIndex = alphabetLetters.firstIndex(of: i)!
-        print (myIndex)
+        var myIndex = alphabetLetters.firstIndex(of: i)!
+        while myIndex < 26 {
+            print (alphabetLetters[myIndex]) ;
+            myIndex += 1
+        }
     }
 }
 
 
 
-//Ça m'affiche bien le numéro de mon index 
+//Ça m'affiche bien le numéro de mon index
 // Ça marche presque, ce que ça me fait, c'est que ça m'affiche bien i mais après ça reprend tout le tableau de 0
