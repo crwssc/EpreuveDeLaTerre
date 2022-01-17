@@ -5,19 +5,18 @@ let numberOfArguments = argument.count - 1
 let numberOfArrayElements = alphabetLetters.count - 1
 
 if numberOfArguments != 1 {
-    print ("Vous devez fournir un seul argument")
-}
-
-
-
-for i in alphabetLetters {
-    if argument[1] == i {
-        //alphabetLetters.removeFirst()
-        var myIndex = alphabetLetters.firstIndex(of: i)!
-        while myIndex < 26 {
-            print (alphabetLetters[myIndex], terminator:"") ;
-            myIndex += 1
+    print ("Vous devez fournir un argument, un seul")
+} else {
+    for i in alphabetLetters {
+        if argument[1] == i {
+            var myIndex = alphabetLetters.firstIndex(of: i)!
+            while myIndex < 26 {
+                print (alphabetLetters[myIndex], terminator:"") ;
+                myIndex += 1
+            }
         }
     }
+    print()
 }
-print()
+
+
