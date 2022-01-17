@@ -5,7 +5,7 @@ let numberOfArguments = argument.count - 1
 let numberOfArrayElements = alphabetLetters.count - 1
 
 if numberOfArguments != 1 {
-    print ("Vous devez fournir un argument, un seul")
+    print ("Vous devez fournir un seul argument, une lettre de l'alphabet")
 } else {
     for i in alphabetLetters {
         if argument[1] == i {
@@ -14,9 +14,12 @@ if numberOfArguments != 1 {
                 print (alphabetLetters[myIndex], terminator:"") ;
                 myIndex += 1
             }
+            print()
+        } else {
+            print ("Vous devez mettre une des 26 lettres de l'alphabet")
+            break
         }
     }
-    print()
 }
 
-
+// J'essaie de gérer le cas où l'utilisateur mettrai un autre argument que l'une des 26 lettres
