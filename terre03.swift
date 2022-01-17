@@ -15,9 +15,6 @@ if numberOfArguments != 1 {
                 myIndex += 1
             }
             print()
-        } else {
-            print ("Vous devez mettre une des 26 lettres de l'alphabet")
-            break
         }
     }
 }
