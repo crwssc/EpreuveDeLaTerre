@@ -19,3 +19,4 @@ if numberOfArguments != 1 {
     }
 }
 
+// Ce que je pourrais faire c'est créer une classe avec les lettres de l'alphabet de sorte que je puis utiliser ça comme si c'est un type puis ensuite j'utilise la méthode du is pour mon else if statment
