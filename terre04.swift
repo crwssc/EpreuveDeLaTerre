@@ -1,8 +1,13 @@
 var argument = CommandLine.arguments
 argument.remove(at: 0)
 
-if argument.count == 1 || type(of: argument[0]) == Int {
-    print ("It's Okay")
+var mySuperTest = argument[1]
+var result = mySuperTest is Int
+
+if (argument.count != 1) {
+    print("Vous devez fournir un argument, un seul")
+} else if result == false {
+    print("Vous devez mettre un nombre entier")
 } else {
-    print("Please, put only one positif number")
+    print("On commence les choses")
 }

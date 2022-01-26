@@ -8,9 +8,9 @@ if numberOfArguments != 1 {
     print ("Vous devez fournir un seul argument, une lettre de l'alphabet")
 } else {
     for i in alphabetLetters {
-        if argument[1] == i {
+        if (argument[1] == i) {
             var myIndex = alphabetLetters.firstIndex(of: i)!
-            while myIndex < 26 {
+            while (myIndex < 26) {
                 print (alphabetLetters[myIndex], terminator:"") ;
                 myIndex += 1
             }
@@ -19,4 +19,3 @@ if numberOfArguments != 1 {
     }
 }
 
-// J'essaie de gérer le cas où l'utilisateur mettrai un autre argument que l'une des 26 lettres
