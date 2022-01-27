@@ -1,11 +1,11 @@
-let alphabetLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var alphabetLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 var argument = CommandLine.arguments
 let numberOfArguments = argument.count - 1
 let numberOfArrayElements = alphabetLetters.count - 1
 
 if numberOfArguments != 1 {
-    print ("Vous devez fournir un seul argument, une lettre de l'alphabet")
+    print ("Vous devez fournir un seul argument")
 } else {
     for i in alphabetLetters {
         if (argument[1] == i) {
@@ -15,8 +15,10 @@ if numberOfArguments != 1 {
                 myIndex += 1
             }
             print()
+        } else {
+            print ("Vous devez fournir une lettre de l'alphabet")
         }
     }
 }
 
-// Ce que je pourrais faire c'est créer une classe avec les lettres de l'alphabet de sorte que je puis utiliser ça comme si c'est un type puis ensuite j'utilise la méthode du is pour mon else if statment
+// Ce qu'il me faut c'est que le programme aille dans else une fois qu'il ai essayé 26 fois
