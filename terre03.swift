@@ -12,6 +12,11 @@ if numberOfArguments != 1 {
         if testingArg == alphabetLetters[theIndex] {
             for i in alphabetLetters where alphabetLetters.firstIndex(of: i)! >= theIndex {
                 print (i)
+                if i == "z" {
+                    continue
+                    // ça marche bien c'est juste que ça recommence à chaque fois 
+                }
+                print()
             }
         } else {
             theIndex += 1
