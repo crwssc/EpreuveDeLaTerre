@@ -11,6 +11,8 @@ var letterIndex = 0
 
 if numberOfArguments != 1 {
     print ("Vous devez fournir un argument, pas deux, pas zéro, mais bien 1")
+} else if arg == "z" {
+    print ("z")
 } else {
     while (letterIndex <= numberOfArrayElements) {
         if (arg == alphabetLetters[letterIndex]) {
