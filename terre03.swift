@@ -1,28 +1,30 @@
+import Foundation
+
 let alphabetLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var argument = CommandLine.arguments
-let numberOfArguments = argument.count - 1
 let numberOfArrayElements = alphabetLetters.count - 1
 
+var argument = CommandLine.arguments
+let numberOfArguments = argument.count - 1
+let arg = argument[1]
+
+var letterIndex = 0
+
 if numberOfArguments != 1 {
-    print ("Vous devez fournir un seul argument")
+    print ("Vous devez fournir un argument, pas deux, pas zéro, mais bien 1")
 } else {
-    let testingArg = argument[1]
-    var theIndex = 0
-    while (theIndex <= numberOfArrayElements) {
-        if testingArg == alphabetLetters[theIndex] {
-            for i in alphabetLetters where alphabetLetters.firstIndex(of: i)! >= theIndex {
-                print (i)
-                if i == "z" {
-                    continue
-                    // ça marche bien c'est juste que ça recommence à chaque fois 
-                }
-                print()
+    repeat {
+        if (arg == alphabetLetters[letterIndex]) {
+            for i in alphabetLetters {
+                print (i, terminator:"")
             }
+            print()
+            letterIndex += 1
         } else {
-            theIndex += 1
-            if theIndex == numberOfArrayElements {
-                print("Vous devez mettre une lettre de l'alphabet")
+            letterIndex += 1
+            if letterIndex == numberOfArrayElements {
+                print("Vous devez fournir une lettre de l'alphabet")
             }
         }
-    }
+    } while (letterIndex <= numberOfArrayElements)
 }
+
