@@ -11,5 +11,14 @@ if (argument.count != 1) {
 } else if myIntArgument == nil {
     print("Vous devez mettre un nombre entier")
 } else {
-    print("On commence les choses")
+    let theArgument = myIntArgument!
+    let theOperation = Float(theArgument) / 2
+    let theOperationResult = Int(theOperation)
+    let reconvertedResult = Float(theOperationResult)
+    
+    if (theOperation == reconvertedResult ) {
+        print ("pair")
+    } else {
+        print ("impair")
+    }
 }
