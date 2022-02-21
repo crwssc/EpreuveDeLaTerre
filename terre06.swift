@@ -14,3 +14,5 @@ if 2 == 1 {
     }
     print()
 }
+
+// gérer les cas des arguments 
