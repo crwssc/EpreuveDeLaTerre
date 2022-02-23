@@ -2,8 +2,8 @@ var argument = CommandLine.arguments
 argument.remove(at:0)
 
 
-if 2 == 1 {
-    // gérer les cas des arguments
+if argument.count != 1 {
+    print("Vous devez fournir un seul argument")
 } else {
     let myString = String(argument[0])
     let myArray = Array(myString)
