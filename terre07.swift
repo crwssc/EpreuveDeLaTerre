@@ -2,10 +2,9 @@ var argument = CommandLine.arguments
 
 argument.remove(at:0)
 
-if 2==0 {
-    // gérer les erreurs
+if argument.count != 1 {
+    print ("Veuillez mettre un seul argument")
 } else {
     let myArray = Array(argument[0])
     print (myArray.count)
 }
-

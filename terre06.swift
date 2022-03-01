@@ -1,7 +1,6 @@
 var argument = CommandLine.arguments
 argument.remove(at:0)
 
-
 if argument.count != 1 {
     print("Vous devez fournir un seul argument")
 } else {
@@ -14,5 +13,3 @@ if argument.count != 1 {
     }
     print()
 }
-
-// gérer les cas des arguments 

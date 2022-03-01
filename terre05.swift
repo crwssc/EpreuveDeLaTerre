@@ -1,15 +1,11 @@
 var argument = CommandLine.arguments
 
-if argument.count == 0 {
-    // un truc qui arrete le programme
-}
-    
 argument.remove(at:0)
 var dividende = argument[0]
 var diviseur = argument[1]
 
 
-if (argument.count == 2 && Int(dividende)! >= Int(diviseur)!) && (Int(dividende) != nil && Int(diviseur) != nil) {
+if (argument.count == 2 && Int(dividende)! >= Int(diviseur)!) && (Int(dividende) != nil && Int(diviseur) != nil) && (Int(diviseur)! != 0) {
     let intDividende = Int(dividende)!
     let intDiviseur = Int(diviseur)!
     let résultat = intDividende/intDiviseur
