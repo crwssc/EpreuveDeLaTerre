@@ -8,3 +8,5 @@ if argument.count != 1 {
     let myArray = Array(argument[0])
     print (myArray.count)
 }
+
+// on considère que les nombres sont en fait aussi des chaines de caractère

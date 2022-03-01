@@ -7,9 +7,16 @@ if argument.count != 2 {
     let firstNumber = Int(argument[0])!
     let secoundNumber = Int(argument[1])!
     var result = firstNumber
-    for _ in 1...secoundNumber {
-        result *= firstNumber
+    if secoundNumber == 0 && firstNumber != 0 {
+        print (1)
+    } else if secoundNumber == 0 && firstNumber == 0 {
+        print ("Franchement, je ne connais pas la réponse")
+    } else {
+        for _ in 1...secoundNumber {
+            result *= firstNumber
+        }
+        print (result)
     }
-    print (result)
 }
 
+// Bon pour 0 puissance 0, nous laisseront les mathématicien s'occuper de cas
