@@ -1,9 +1,9 @@
 var argument = CommandLine.arguments
 argument.remove(at:0)
+var theNumber = Float(argument[0])
 
-if 8==0 {
-    // gérer les erreurs
+if theNumber == nil || argument.count != 1 {
+    print("You have to put a float, one")
 } else {
-    let theNumber = Float(argument[0])!
-    print (theNumber.squareRoot())
+    print ((theNumber!).squareRoot())
 }

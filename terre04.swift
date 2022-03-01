@@ -2,10 +2,6 @@ import Foundation
 
 var argument = CommandLine.arguments
 
-if argument.count == 0 {
-    // un truc qui arrête le programme
-}
-
 argument.remove(at: 0)
 
 var myArgument = argument[0]
