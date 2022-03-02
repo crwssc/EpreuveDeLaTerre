@@ -1,3 +1,5 @@
+// Divisions
+
 var argument = CommandLine.arguments
 
 argument.remove(at:0)

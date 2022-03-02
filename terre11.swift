@@ -1,3 +1,5 @@
+// 24 to 12
+
 var argument = CommandLine.arguments
 argument.remove(at:0)
 

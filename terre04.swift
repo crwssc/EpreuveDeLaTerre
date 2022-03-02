@@ -1,3 +1,5 @@
+// Pair ou impair
+
 import Foundation
 
 var argument = CommandLine.arguments

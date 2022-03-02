@@ -1,3 +1,5 @@
+// Nombre premier
+
 var argument = CommandLine.arguments
 argument.remove(at:0)
 var theArgument = argument[0]

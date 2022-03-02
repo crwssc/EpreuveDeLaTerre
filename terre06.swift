@@ -1,3 +1,5 @@
+// Inverser une chaîne
+
 var argument = CommandLine.arguments
 argument.remove(at:0)
 

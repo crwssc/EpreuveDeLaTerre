@@ -1,3 +1,5 @@
+// Puissance d'un nombre
+
 var argument = CommandLine.arguments
 argument.remove(at:0)
 
