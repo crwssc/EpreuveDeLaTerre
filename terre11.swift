@@ -9,9 +9,9 @@ var minute = argument[2]
 
 if argument.count != 3 {
     print ("Vous devez fournir l'heure en respectant cette forme : 23 : 43 (mettre des espaces entre chaque élément)")
-} else if ((Int(heure)! == nil) || (Int(minute)! == nil)) {
+} else if ((Int(heure) == nil) || (Int(minute) == nil)) {
     print ("Vous devez fournir l'heure en respectant cette forme : 23 : 43  (mettre des espaces entre chaque élément)")
-} else if heure > 24 || minute > 60 {
+} else if Int(heure) > 24 || Int(minute) > 60 {
     print ("Il n'y a que 24 heure dans la journée et que 60 minutes dans l'heure")
 } else {
     switch heure {
