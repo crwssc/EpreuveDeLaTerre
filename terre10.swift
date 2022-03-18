@@ -9,21 +9,7 @@ if (argument.count != 1 || Int(theArgument) == nil) {
 } else if (Int(theArgument)! < 2) {
     print ("\(theArgument) n'est pas un nombre premier, ni un nombre second d'ailleurs mdrr. Qu'est ce qu'on rigole haha")
 } else {
-    let floatArgument = Float(argument[0])!
-    let squareRootArg = floatArgument.squareRoot()
-    let theNearestWholeNumberOfTheSquareRootArg = Int(squareRootArg)
-    var theParameter : Float = 0
-    while theNearestWholeNumberOfTheSquareRootArg > Int(theParameter) {
-        let possibleDivider = floatArgument / theParameter
-        let intPossibleDivider = Int(possibleDivider)
-        let floatPossibleDivider = Float(intPossibleDivider)
-        if (floatPossibleDivider == possibleDivider) {
-            print ("\(theArgument) est un nombre premier")
-            break
-        } else if (Int(theParameter) == theNearestWholeNumberOfTheSquareRootArg) {
-            print ("\(theArgument) n'est pas un nombre premier")
-        } else {
-            theParameter += 1
+    
         }
     }
 }
