@@ -16,12 +16,12 @@ if argument.count != 3 {
 } else {
     switch Int(heure)! {
     case 00:
-        print("\(12) : \(minute)PM")
+        print("\(12):\(minute)PM")
     case 12:
-        print("\(12) : \(minute)AM")
-    case 1...11:
-        print("\(heure) : \(minute)AM")
+        print("\(12):\(minute)AM")
     case 13...23:
-        print("\(heure - 12) : \(minute)PM")
+        print("\(Int(heure)! - 12):\(minute)PM")
+    default:
+        print("\(heure):\(minute)AM")
     }
 }
