@@ -22,3 +22,5 @@ if argument.count != 3 {
         print (argument[2])
     }
 }
+
+// je pense que c'est une histoire de type, essaie de régler ça
