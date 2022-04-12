@@ -8,19 +8,21 @@ if argument.count != 3 {
 } else if (Int(argument[0]) == nil || Int(argument[1]) == nil || Int(argument[0]) == nil) {
     print ("Vous devez fournir des nombres entiers")
 } else {
-    if (argument[0] < argument[1]) && (argument[1] < argument[2]) == true {
+    let arg0 = Float(argument[0])!
+    let arg1 = Float(argument[1])!
+    let arg2 = Float(argument[2])!
+    if (arg0 < arg1) && (arg1 < arg2) == true {
         print (argument[1])
-    } else if (argument[2] < argument[0]) && (argument[0] < argument[1]) == true {
+    } else if (arg2 < arg0) && (arg0 < arg1) == true {
         print (argument[0])
-    } else if (argument[1] < argument[2]) && (argument[2] < argument[0]) == true {
+    } else if (arg1 < arg2) && (arg2 < arg0) == true {
         print (argument[2])
-    } else if (argument[0] > argument[1]) && (argument[1] > argument[2]) == true {
+    } else if (arg0 > arg1) && (arg1 > arg2) == true {
         print (argument[1])
-    } else if (argument[2] > argument[0]) && (argument[0] > argument[1]) == true {
+    } else if (arg2 > arg0) && (arg0 > arg1) == true {
         print (argument[0])
-    } else if (argument[1] > argument[2]) && (argument[2] > argument[0]) == true {
+    } else if (arg1 > arg2) && (arg2 > arg0) == true {
         print (argument[2])
     }
 }
 
-// je pense que c'est une histoire de type, essaie de régler ça
